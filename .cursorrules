@@ -1,20 +1,2 @@
 # AI Agent & Copilot Instructions
 # Applies to: Cursor, Claude Code, GitHub Copilot, Windsurf, Antigravity
-
-You are operating in a workspace that is fortified by `code-review-graph`.
-This tool has been integrated as an MCP server. You have access to its graph-analysis tools (e.g., `analyze_impact`, `status`, etc.).
-
-## ⚠️ MANDATORY WORKFLOW FOR ALL CODE CHANGES ⚠️
-
-Before completing any implementation or refactoring existing code, you MUST follow this protocol:
-
-1. **Impact Analysis:** 
-   Whenever you are asked to modify a function, rename a variable, or change an interface, you MUST use the MCP server tools provided by `code-review-graph` to analyze the impact of your proposed changes. 
-   
-2. **Review Dependencies:**
-   Check the dependency graph. Do not modify exported/public functions without seeing what other files in the workspace call them.
-
-3. **Check the Graph Status:**
-   If you make massive systemic changes, proactively suggest running `python -m code_review_graph update` to keep the graph database synced, or mention that the user should restart their watch daemon.
-
-By acting as a hyper-cautious coding assistant, you will use `code-review-graph`'s MCP server heavily to prevent breaking changes in this monorepo.

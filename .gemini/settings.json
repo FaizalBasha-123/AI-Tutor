@@ -49,7 +49,7 @@
     "preloadContext": true
   },
   "output": {
-    "format": "structured",
+    "format": "json",
     "includeMetadata": true,
     "sourceAnnotation": true
   }
