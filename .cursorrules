@@ -1,2 +1,16 @@
 # AI Agent & Copilot Instructions
-# Applies to: Cursor, Claude Code, GitHub Copilot, Windsurf, Antigravity
+# Applies to: Cursor, Claude Code, GitHub Copilot, Windsurf, Antigravity, Cascade
+
+# Graphify-First Code Analysis
+# Before analyzing any code in this project, AI assistants MUST:
+# 1. Read `.graphify-context/project-context.txt` for project stats and structure
+# 2. Read `.graphify-context/project-tree.txt` for directory layout
+# 3. Read `.graphify-context/markdown-index.txt` for relevant documentation
+# 4. Only then proceed to file reads or code searches
+
+# Key Facts
+# - AI-Tutor-Backend is Rust/Axum (NOT Node.js/Express)
+# - AI-Tutor-Frontend is Next.js 16 + React 19 monorepo (pnpm)
+# - Schools24-backend is Go/Gin with multi-tenant PostgreSQL
+# - Schools24-frontend is React + Capacitor
+# - Project root: /media/faizal-basha/Codespace/uc-school
